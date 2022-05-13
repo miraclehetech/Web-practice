@@ -1,0 +1,35 @@
+/*没有提供的参数用他的对边参数*/
+/*百分比 父元素宽度的百分比*/
+/*auto可以将元素居中*/
+/*overflow可以避免样式多像素*/
+/*上下都有margin的话取大*/
+/*元素的大小和内边距相关*/
+/*width=content+padding+border*/
+.div-outer{
+    width: 300px;
+    height:300px;
+    background-color: lightblue;
+    margin:50px;
+    /*border-top:1px solid;*/
+    /*padding-top:1px;*/
+    overflow:hidden;
+    padding:20px 0 0 30px;
+}
+.div-outer::before{
+    content:"";
+    display: table;
+}
+.div-inner{
+    width:100px;
+    height:100px;
+    background-color:darkred;
+    margin-bottom:10px;
+    margin-left: 20px;
+}
+.div-inner2{
+    width:100px;
+    height:100px;
+    background-color: darkgreen;
+    margin-top:30px;
+    margin-left:30px;
+}

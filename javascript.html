@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--js没有明确入口-->
+<!--js的string不能修改,类似整数-->
+<!--null也是object-->
+<!--js的变量动态类型-->
+<!--js的运算符和c还有py类似 区别在讲义里-->
+<!--parse int 取整-->
+<!--三等号会比较类型-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module">
+        console.log("hello world");
+    </script>
+</head>
+
+<body>
+    <script type="module" src="/static/js/index.js"></script>
+    <script type="module">
+        let s = "acwing", x = 5;
+        let d = {
+            name: "yxc",
+            age: 18,
+        }
+        let s3 = s.substr(0, 1) + 'x';
+        console.log(s3);
+        let flag = true;
+        console.log(typeof flag);
+        console.log(d['name'], d["age"]);
+        console.log(d.name, d.age);
+        console.log(parseInt(5 / 3));
+
+    </script>
+    <script type="module">
+        import { name, print } from "/static/js/index.js"
+        import { print_x } from "/static/js/index2.js"
+        console.log(name);
+        print();
+        print_x();
+    </script>
+
+</body>
+
+</html>

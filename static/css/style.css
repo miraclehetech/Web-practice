@@ -1,0 +1,154 @@
+/*只有这种注释*/
+/*标签选择器*/
+/*id选择器*/
+/*id和class的区别
+习惯上id不一样 class重复*/
+/*同一个标签可以有多个class*/
+/*.表示类，#表示id*/
+/*acwing的灰白分隔都是nth-child 视为状态*/
+/*target当url指向该元素时生效 链接后面加个#加个id*/
+/*逗号隔开可以同时修改两个样式*/
+/*有伪类标签同样可以使用*/
+/*div.big只有div放上big才能变大*/
+/*div.big.reak同时具有big和real的才能变大*/
+/*#myp.big*/
+/*复合选择器*/
+/*加号类型的选择器*/
+/*div+p的选择器*/
+/*只有p紧跟在div后面才会改变样式*/
+/*p+p同理*/
+/*#myp+p*/
+/*空格选择器*/
+/*ul li 有一个li祖先节点是li就触发样式*/
+/* *表示所有标签*/
+/*伪元素选择器*/
+/*越具体的选择器权重越大*/
+/*类别比标签更具体*/
+/*如果想某样式权重最高，在最后加一个！important就行*/
+/*rgb可以表示所有颜色*/
+/* 16进制表示法
+使用6位16进制数表示颜色，例如：#ADD8E6。
+其中第1-2位表示红色，第3-4位表示绿色，第5-6位表示蓝色。
+每一个颜色两个12进制数
+简写方式：#ABC，等价于#AABBCC。*/
+/*rgb分别表示也行 都一样*/
+/*#ABC可以代表AABBCC*/
+/*rgba a表示透明度*/
+/*qq截图工具可以取RGB值*/
+img {
+    width: 100px;
+    height: 200px;
+    border-radius: 50%
+}
+
+p {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin-bottom: 10px
+}
+div{
+    width:50px;
+    height:70px;
+    margin-bottom: 30px;
+}
+
+.blue-p {
+    background-color: aliceblue;
+}
+#mydiv{
+    background-color: coral;
+}
+#myp{
+    background-color: blue;
+}
+.big-tag{
+    width:120px;
+    height:120px;
+}
+.effect:hover
+{
+    transform:scale(1.2);
+    transition:200ms
+}
+a:link
+{
+color:red;
+}
+a:visited
+{
+    color:blue
+}
+a:hover
+{
+    color:orange
+}
+a:active
+{
+    color:blueviolet
+}
+button:hover{
+    color:aliceblue
+}
+button:active{
+    color:cornsilk
+}
+button:visited
+{
+    color:black
+}
+input:focus{
+    background-color: blue;
+}
+input:hover{
+    transform:scale(1.3)
+}
+p:nth-child(2)
+{
+    background-color:yellow;
+}
+p:nth-child(odd)/*奇数 even偶数 2n+1这种都是可以的*/
+{
+    background-color:yellow;
+}
+p:target{
+    transform:scale(1.2);
+    color:olive;
+    transition:2s;
+}
+div,p{
+    background-color: blue;
+}
+ul li{
+    background-color: red;
+}
+*{
+    font-size: 24px;
+}
+input[required]{
+    background-color: blueviolet;
+}
+input[id]
+{
+    background-color:blue;
+}
+input[type=number]
+{
+    background-color:red;
+}
+p::first-letter{
+    color:red;
+    font-size:110%;
+}
+p::selection{
+    color:aliceblue;
+    background-color: blueviolet;
+}
+h1::before{
+    content:"<<";
+    color :red;
+}
+h1::after{
+    content:">>";
+    color:blue;
+}

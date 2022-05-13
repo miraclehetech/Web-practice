@@ -1,0 +1,24 @@
+/*上右下左 写两个上下一组 左右一组*/
+p{
+    width:50px;
+    height:30px;
+}
+#myp{
+    width: 23px;
+    background-color: blue;
+}
+.myp{
+    width: 23px;
+    background-color: yellow;
+} 
+h4{
+    text-align: center;
+}
+.mydiv{
+    text-align:justify;
+    font-size: 20px;
+    background-size: 150px;
+    background-image: url(/static/photos/mountain.jpg);
+    background-repeat: no-repeat;
+    background-color: linear-gradient(rgba(0,0,255,0.5),rgba(0,100,200,0.5));
+}

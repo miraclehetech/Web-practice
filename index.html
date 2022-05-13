@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="我是戴仁杰">
+    <meta name="keywords" content="算法 计算机 牛子">
+    <link rel="icon" href="/images/logo.png">
+    <title>Acwing-Web应用课</title>
+</head>
+
+<body>
+    <!--逻辑上把一块东西放在一起，默认带空行div-->
+    <!--span是行的元素-->
+    <!-- 这是标题 -->
+    <!--h1到h6为大小区别 div式标签-->
+    <!--p为段落忽略段落中自己打的空格和回车-->
+    <!--pre也为段落 但是不忽略空格和回车 适合保存代码-->
+    <!--大于小于号要用特殊字符&lt &gt-->
+    <!--<br>为空格-->
+    <!--<hr>为加一条水平线-->
+    <!--i斜体-->
+    <!--剩余的看讲义用-->
+    <!-- src为图片地址 alt-->
+    <!--width设置图片宽度 高度为等比例缩放-->
+    <!--alt为图片显示不了的时候显示的文字-->
+    <!-- audios 后面的那句话为无法播放时的文字-->
+    <!--视频未下载，因此没有-->
+    <!--超链接接到站内-->
+    <!--target="_blank"开新的页面-->
+    <!--input 的name是写在url里的-->
+    <!--foam里面button绑定form里的所有元素-->
+    <!--radio一组只能选择一个-->
+    <!--placeholder里放标签名在空的时候会显示-->
+    <!--form可以和后端交互-->
+    <!--textarea是可以拉扯的评论框-->
+    <!--ul为无顺序表，ol为有序列表-->
+    <!--一级二级三级列表的圈是不一样的-->
+    <!--dt标题 dd名称 用的不多 title description-->
+    <!--语义标签可以替代我写的class写法-->
+    <!--特殊符号看讲义-->
+    <h1>何正潇</h1>
+    <h2>数据科学与大数据技术</h2>
+    <h3>电子与信息工程学院</h3>
+    <h4>1950095</h4>
+    <img height="100" src="/images/1_3ec4c1cf99-mountain.jpg" alt="山">
+    <img height="100" src="/images/1_3ec4c1cf99-mountain.jpg" alt="山">
+    <img height="100" src="/images/1_3ec4c1cf99-mountain.jpg" alt="山">
+    <audio controls src="videos/sound1.mp3">Your browser does not support the
+    </audio>
+    <video controls width="800">
+
+        <source src="/videos/video1.mp4" type="video/mp4">
+
+        <source src="/videos/video2.mp4" type="video/mp4">
+
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+    <p>
+        1893年，<ins>德国医生埃里希·宝隆</ins>（Dr. Erics
+        Paulum）来到上海，在德国总领事馆附近开一诊所。后来，他与在上海的几名德国医生成立了“德医公会”。八国联军侵华时，德国运来大批医疗设备，聘请当时在上海负有盛名的宝隆医师，协助在沪成立了伤兵医院。德军归国时，为感谢宝隆，将伤兵医院的医疗设备悉数赠送给宝隆。
+    </p>
+    <hr>
+    <p>
+        1893年，德国医生埃里希·宝隆（Dr. Erics
+        Paulum）来到上海，在德国总领事馆附近开一诊所。后来，他与在上海的几名德国医生成立了“德医公会”。八国联军侵华时，德国运来大批医疗设备，聘请当时在上海负有盛名的宝隆医师，协助在沪成立了伤兵医院。德军归国时，为感谢宝隆，将伤兵医院的医疗设备悉数赠送给宝隆。
+    </p>
+    <h2>超链接</h2>
+    <a href="https://www.acwing.com" target="_blank">Acwing
+        <img width="30src="" alt="">
+    </a>
+    <a href=" /about.html">about</a>
+    <h2>form</h2>
+    <form action="./about.html">
+        <label for="username">用户名</label>
+        <input placeholder="用户名" type="text" id="username" maxlength="10">
+        <br>
+        <label for="age">年龄</label>
+        <input required type="number" id="age">
+        <br>
+        <label for="email">邮箱</label>
+        <input type="email" id="age">
+        <br>
+        <label for="pw">密码</label>
+        <input type="password" name="password" id="pw">
+        <br>
+        <label for="cpp">cpp</label>
+        <input type="radio" value="cpp" name="lang" id="cpp">
+        <label for="java">java</label>
+        <input type="radio" value="java" name="lang" id="java">
+        <label for="python">python</label>
+        <input type="radio" value="python" name="lang" id="python">
+        <label for="lang1">评论</label>
+        <br>
+        <textarea name="commentary" id="lang1" cols="30" rows="10"></textarea>
+        <br>
+        <label for="lang2">编程语言</label>
+        <select name="language" id="lang2">
+            <option value="">请选择</option>
+            <option value="Cpp">Cpp</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+        </select>
+        <button type="submit">提交</button>
+    </form>
+    <br>
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ul>
+    <br>
+    <ol>
+        <li>first
+            <ul>
+                <li>
+                    <a href="https://www.acwing.com" target="_blank"></a>
+                    1.1vsocde
+                </li>
+                <li>
+                    1.2web
+                </li>
+                <li>
+                    1.3Java
+                </li>
+            </ul>
+        </li>
+        <li>second</li>
+        <li>third</li>
+    </ol>
+    <dl>
+        <dt>Name</dt>
+        <dd>Godzilla</dd>
+        <dt>Born</dt>
+        <dd>1952</dd>
+        <dt>Birthplace</dt>
+        <dd>Japan</dd>
+        <dt>Color</dt>
+        <dd>Green</dd>
+        <dd>Orange</dd>
+    </dl>
+    <header>
+        <h3>我的收藏</h3>
+        <ul>
+            <li><a href="./edit.html">编辑</a></li>
+            <li>
+                <a href="./contact.html">联系我</a>
+            </li>
+        </ul>
+    </header>
+    <section>
+        <h4>pictures</h4>
+        <figure>
+            <img src="/images/logo.png" width="100" alt="图片">
+        </figure>
+        <figure>
+            <img src="./images/mountain.jpg" width="100" alt="山">
+        </figure>
+    </section>
+    <hr>
+    <section>
+        <h4>
+            文章< /h4>
+                <article>
+                    <h5>背影</h5>
+                    <p>啊啊啊啊啊</p>
+                </article>
+                <article>
+                    <h5>春</h5>
+                    <p>啊啊啊啊</p>
+                </article>
+    </section>
+    <footer>
+        &copy;2001-2022 hzx copyright
+    </footer>
+</body>
+
+</html>

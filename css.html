@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--css-->
+<html lang="en">
+<!--style两个同时修改了同一个属性会产生覆盖-->
+<!--style直接写在body里了直接按body的样式-->
+<!--定义顺序而非class声明顺序决定样式-->
+<!--伪类选择器-->
+<!--nth-child判断是不是父节点的第x个儿子-->
+<!--a还可以指向id，不止可以指向网站外-->
+<!--element1 > element2：选择父标签是element1的所有element2元素-->
+<!--通配选择器-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100px;
+            height: 200px;
+            border-radius: 50%
+        }
+
+        p {
+            width: 50px;
+            height: 50px;
+            background-color: lightblue;
+        }
+
+        .blue-p {
+            background-color: aliceblue;
+        }
+    </style>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <a href="#myp">我的标签</a>
+    <img class="effect" src="/static/photos/mountain.jpg" alt="" style="width: 300px;height: 250px">
+    <img src="/static/photos/mountain.jpg" alt="" style="width:80% height:80%">
+    <div>yxc</div>
+    <div style="width:300px;height:300px;background-color:lightblue"></div>
+    <p class="blue-p big-tag">1</p>
+    <p id="myp" class="p">2</p>
+    <a href="/about.html">about</a>
+    <a href="https://www.acwing.com">Acwing-Web应用课</a>
+    <input type="text" name="" text="">
+    <div>1</div>
+    <div>2</div>
+    <ul>
+        <li>1</li>
+        <li>3</li>
+        <li>
+            <ul>
+                <li>3</li>
+            </ul>
+        </li>
+    </ul>
+    <input type="text" required>
+    <input type="text">
+    <p>锄禾日当午</p>
+    <p>汗滴禾下土</p>
+    <p>谁知盘中餐</p>
+    <p>粒粒皆辛苦</p>
+    <h1>杨廷锴</h1>
+
+</body>
+
+</html>
